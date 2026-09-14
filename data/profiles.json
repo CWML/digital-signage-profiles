@@ -1,0 +1,18 @@
+[
+  {
+    "id": "judy-spak",
+    "name": "Judy M. Spak, MLS",
+    "pronouns": "she/her/hers",
+    "title": "Head of Academic Research and Education",
+    "team": "Academic Research & Education",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_jpg,h_1200,q_auto,w_1200/v1/yms/prod/2f7bf0ab-f6a8-4ba7-8540-9dce5d33845d",
+    "profileUrl": "https://medicine.yale.edu/profile/judy-spak/",
+    "services": [
+      "Evidence and knowledge synthesis",
+      "Expert literature searching",
+      "Health professions education research",
+      "Research and education support"
+    ],
+    "audiences": ["YSM", "YSPH", "YSN", "PA programs"]
+  }
+]
