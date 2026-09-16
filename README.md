@@ -58,7 +58,7 @@ Then visit <http://localhost:8000>.
 
   ```json
   {
-    "alyssa-grimshaw": {
+    "first-last": {
       "bio": "Corrected biography text."
     }
   }
