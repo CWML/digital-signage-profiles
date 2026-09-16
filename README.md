@@ -10,28 +10,34 @@ Hosted publicly at <https://cwml.github.io/digital-signage-profiles/>
 
 ```text
 digital-signage-profiles/
+├── .github/
+│   └── workflows/
+│       └── sync-profiles.yml
+├── assets/
+│   └── fonts/                       # Local licensed fonts; gitignored
 ├── css/
 │   └── signage.css
 ├── data/
 │   ├── profile-overrides.json
 │   ├── profile-sources.json
-│   ├── signage-config.json
-│   └── profiles.json
+│   ├── profiles.json                # Generated profile data
+│   └── signage-config.json
 ├── js/
-│   ├── campaign.js
 │   ├── app.js
+│   ├── campaign.js
 │   ├── profile-card.js
 │   └── profile-service.js
 ├── scripts/
-│   ├── sync-profiles.mjs
-│   └── lib/parse-profile.mjs
+│   ├── lib/
+│   │   ├── apply-profile-overrides.mjs
+│   │   └── parse-profile.mjs
+│   └── sync-profiles.mjs
 ├── test/
 │   └── parse-profile.test.mjs
-├── .github/workflows/
-│   └── sync-profiles.yml
-├── package.json
 ├── .gitignore
 ├── index.html
+├── package-lock.json
+├── package.json
 └── README.md
 ```
 
@@ -62,7 +68,8 @@ Then visit <http://localhost:8000>.
 - `data/signage-config.json` controls the active campaign. Set `activeTeam` to the exact team name used in `profile-sources.json`; the display loops through those profiles in source-list order. `displayDurationSeconds` is the dwell time for each profile (currently 120 seconds). For example, changing the active team to `"Clinical"` switches the next page load to the Clinical campaign.
 - Add `?profile=person-id` to a local preview URL to show only one profile without cycling, for example `http://localhost:8000/?profile=kate-nyhan`.
 - Run `npm ci`, then `npm test` to run parser and frontend-safety tests. Run `npm run sync-profiles` to refresh `data/profiles.json` locally.
-- JSON-LD provides names, credentials, biographies, email, phone, portraits, titles, affiliations/locations, canonical URLs, and source update dates. Scoped public HTML parsing supplies optional pronouns, publication totals, and Medical Research Interests.
+- JSON-LD provides names, credentials, biographies, email, phone, portraits, titles, affiliations/locations, canonical URLs, and source update dates. Scoped public HTML parsing supplies optional pronouns, Medical Research Interests, standard Publications Overview totals, and Research at a Glance publication/citation totals when the standard overview is absent.
 - Empty optional fields are omitted from the generated data, so the corresponding card sections do not appear.
 - The scheduled workflow runs at 06:15 UTC nightly (1:15 AM EST / 2:15 AM EDT), and can also be started with **Run workflow** in GitHub Actions. It runs tests first and commits only a changed `data/profiles.json` as `github-actions[bot]`.
+- Yale New and Mallory font files are local, licensed assets and are intentionally excluded from Git. The CSS uses its standard system-font fallbacks when those files are unavailable.
 - To deploy, enable GitHub Pages for the repository’s `main` branch and root directory. In Appspace, point the Web View card to <https://cwml.github.io/digital-signage-profiles/>.
