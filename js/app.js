@@ -1,20 +1,36 @@
-import { getProfiles } from "./profile-service.js";
+import { selectCampaign, selectPreviewProfile } from "./campaign.js";
+import { getProfiles, getSignageConfig } from "./profile-service.js";
 import { createProfileCard } from "./profile-card.js";
 
 async function initializeSignage() {
   const display = document.querySelector("#signage");
 
   try {
-    const profiles = await getProfiles();
+    const [profiles, config] = await Promise.all([
+      getProfiles(),
+      getSignageConfig()
+    ]);
     const requestedProfileId = new URLSearchParams(window.location.search).get(
       "profile"
     );
-    const profile = profiles.find(
-      ({ id }) => id === requestedProfileId
-    ) ?? profiles[0];
+    const campaign = requestedProfileId
+      ? [selectPreviewProfile(profiles, requestedProfileId)]
+      : selectCampaign(profiles, config.activeTeam);
+    let profileIndex = 0;
 
-    display.innerHTML = createProfileCard(profile);
-    sizePortraitFrame(display);
+    const renderProfile = () => {
+      display.innerHTML = createProfileCard(campaign[profileIndex]);
+      sizePortraitFrame(display);
+    };
+
+    renderProfile();
+
+    if (!requestedProfileId && campaign.length > 1) {
+      window.setInterval(() => {
+        profileIndex = (profileIndex + 1) % campaign.length;
+        renderProfile();
+      }, config.displayDurationSeconds * 1000);
+    }
   } catch (error) {
     console.error(error);
     display.innerHTML =

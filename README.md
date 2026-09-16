@@ -13,9 +13,12 @@ digital-signage-profiles/
 ├── css/
 │   └── signage.css
 ├── data/
+│   ├── profile-overrides.json
 │   ├── profile-sources.json
+│   ├── signage-config.json
 │   └── profiles.json
 ├── js/
+│   ├── campaign.js
 │   ├── app.js
 │   ├── profile-card.js
 │   └── profile-service.js
@@ -45,6 +48,19 @@ Then visit <http://localhost:8000>.
 ## Data notes
 
 - `data/profile-sources.json` is the maintainer-edited list of people. Add or remove an object there, using a unique lowercase-hyphenated `id`, a non-empty signage `team`, and an HTTPS `https://medicine.yale.edu/profile/...` URL.
+- `data/profile-overrides.json` is the maintainer-edited exception layer. Its values replace or supplement synchronized fields after every refresh, so corrections persist. For example:
+
+  ```json
+  {
+    "alyssa-grimshaw": {
+      "bio": "Corrected biography text."
+    }
+  }
+  ```
+
+  You can override `name`, `title`, `team`, `pronouns`, `photoUrl`, `profileUrl`, `bio`, `medicalResearchInterests`, or individual fields within `contact` and `publicationsOverview`. Override IDs must already exist in `profile-sources.json`.
+- `data/signage-config.json` controls the active campaign. Set `activeTeam` to the exact team name used in `profile-sources.json`; the display loops through those profiles in source-list order. `displayDurationSeconds` is the dwell time for each profile (currently 120 seconds). For example, changing the active team to `"Clinical"` switches the next page load to the Clinical campaign.
+- Add `?profile=person-id` to a local preview URL to show only one profile without cycling, for example `http://localhost:8000/?profile=kate-nyhan`.
 - Run `npm ci`, then `npm test` to run parser and frontend-safety tests. Run `npm run sync-profiles` to refresh `data/profiles.json` locally.
 - JSON-LD provides names, credentials, biographies, email, phone, portraits, titles, affiliations/locations, canonical URLs, and source update dates. Scoped public HTML parsing supplies optional pronouns, publication totals, and Medical Research Interests.
 - Empty optional fields are omitted from the generated data, so the corresponding card sections do not appear.

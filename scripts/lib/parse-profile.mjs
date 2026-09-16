@@ -92,14 +92,30 @@ function extractPublicationsOverview($) {
   const heading = $("h1, h2, h3, h4, [aria-label='Publications Overview']")
     .filter((_, element) => cleanText($(element).text()) === "Publications Overview")
     .first();
-  if (!heading.length) return undefined;
-
   const container = heading.closest("article, section");
-  const text = cleanText((container.length ? container : heading.parent()).text()) ?? "";
+  const text = heading.length
+    ? cleanText((container.length ? container : heading.parent()).text()) ?? ""
+    : "";
   const values = {
     publications: statistic(text, "Publications"),
     citations: statistic(text, "Citations"),
     yaleCoAuthors: statistic(text, "Yale Co-Authors")
+  };
+  if (Object.values(values).some((value) => value !== undefined)) {
+    return omitEmpty(values);
+  }
+
+  return extractResearchAtAGlance($);
+}
+
+function extractResearchAtAGlance($) {
+  const timeline = $(".profile-details-publications-timeline-glance").first();
+  if (!timeline.length) return undefined;
+
+  const text = cleanText(timeline.text()) ?? "";
+  const values = {
+    publications: statistic(text, "Publications"),
+    citations: statistic(text, "Citations")
   };
   return Object.values(values).some((value) => value !== undefined) ? omitEmpty(values) : undefined;
 }
@@ -147,7 +163,7 @@ function firstValue(value) {
 }
 
 function statistic(text, label) {
-  const match = text.match(new RegExp(`([\\d,.]+)\\s+${label.replace("-", "[- ]")}`, "i"));
+  const match = text.match(new RegExp(`([\\d,.]+)\\s*${label.replace("-", "[- ]")}`, "i"));
   if (!match) return undefined;
   const number = Number(match[1].replaceAll(",", ""));
   return Number.isFinite(number) ? number : undefined;

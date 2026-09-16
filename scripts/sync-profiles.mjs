@@ -1,14 +1,17 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
+import { applyProfileOverrides } from "./lib/apply-profile-overrides.mjs";
 import { parseProfileHtml, validateSources } from "./lib/parse-profile.mjs";
 
 const sourcesPath = new URL("../data/profile-sources.json", import.meta.url);
+const overridesPath = new URL("../data/profile-overrides.json", import.meta.url);
 const outputPath = new URL("../data/profiles.json", import.meta.url);
 const USER_AGENT = "CWML Digital Signage Profile Sync/1.0 (+https://cwml.github.io/digital-signage-profiles/)";
 const TIMEOUT_MS = 20_000;
 
 async function main() {
   const sources = validateSources(JSON.parse(await readFile(sourcesPath, "utf8")));
+  const overrides = JSON.parse(await readFile(overridesPath, "utf8"));
   const profiles = [];
 
   for (const source of sources) {
@@ -20,7 +23,7 @@ async function main() {
     }
   }
 
-  const output = `${JSON.stringify(profiles, null, 2)}\n`;
+  const output = `${JSON.stringify(applyProfileOverrides(profiles, overrides), null, 2)}\n`;
   const current = await readFile(outputPath, "utf8").catch(() => "");
   if (current !== output) {
     await writeFile(outputPath, output);

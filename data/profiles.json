@@ -13,6 +13,10 @@
       "location": "Cushing/Whitney Medical Library"
     },
     "bio": "As Head of Academic Research and Education at the Cushing/Whitney Medical Library, I provide expert research assistance and collaborate with faculty and learners on a broad range of topics. I am particularly interested in health professions education scholarship and the role of librarians in teaching and assessing the evidence-based information-seeking skills of trainees. I collaborate on evidence and knowledge syntheses projects by providing expert searching and methodological expertise. The Academic Research and Education team supports the Yale School of Medicine, the Physician Associate program, the Yale School of Public Health, and the Yale School of Nursing and provides exceptional research and education services to the health sciences community at Yale. When not at work, I enjoy playing with my Pembroke Welsh Corgi, watching hockey, and knitting.",
+    "publicationsOverview": {
+      "publications": 10,
+      "citations": 556
+    },
     "medicalResearchInterests": [
       "Competency-Based Education",
       "Education, Medical, Continuing",
@@ -34,7 +38,7 @@
       "email": "alyssa.grimshaw@yale.edu",
       "location": "Cushing/Whitney Medical Library"
     },
-    "bio": "Alyssa Grimshaw is a Biomedical Research and Methodology Librarian. She earned a post-master's certificate as an interprofessional informationist at Simmons University School of Library and Information Sciences. As an information expert, she collaborates on evidence synthesis and meta-research projects. Her research interests include reproducibility, reporting, and housing impacts on public health. Alyssa provides in-­depth reference, information, research and consultation services for clinical professionals and users in the health sciences community, including literature searches in support of systematic reviews, research, grants, clinical practice, animal use, teaching, and publishing. For more information about me, please visit please page.",
+    "bio": "Alyssa Grimshaw is a Biomedical Research and Methodology Librarian. She earned a post-master's certificate as an interprofessional informationist at Simmons University School of Library and Information Sciences. As an information expert, she collaborates on evidence synthesis and meta-research projects. Her research interests include reproducibility, reporting, and housing impacts on public health. Alyssa provides in-­depth reference, information, research and consultation services for clinical professionals and users in the health sciences community, including literature searches in support of systematic reviews, research, grants, clinical practice, animal use, teaching, and publishing.",
     "publicationsOverview": {
       "publications": 103,
       "citations": 3640,
@@ -58,6 +62,10 @@
       "location": "Medical Library"
     },
     "bio": "Caitlin Meyer is a librarian at Yale’s Harvey Cushing/John Hay Whitney Medical Library. She coordinates the library’s instruction program and supports the students and faculty of the School of Medicine’s Physician Associate Program and Physician Assistant Online Program. Caitlin has a Master of Library and Information Science degree from UCLA and a Bachelor’s degree in Communication Studies from Vanderbilt. Outside of work, Caitlin is an avid hiker, camper, and fan of bluegrass music.",
+    "publicationsOverview": {
+      "publications": 5,
+      "citations": 61
+    },
     "medicalResearchInterests": [
       "Access to Information",
       "Information Literacy",
@@ -77,6 +85,10 @@
       "location": "Cushing/Whitney Medical Library"
     },
     "bio": "Kate Nyhan is a research and education librarian for public health at Cushing/Whitney Medical Library and a lecturer in environmental health sciences at Yale School of Public Health. She earned a post-master's certificate as an interprofessional informationist at Simmons University School of Library and Information Sciences. As an information expert, she contributes to evidence synthesis and metaresearch projects. Her research interests include research waste, reproducibility, reporting, and the information behavior of the public health workforce.",
+    "publicationsOverview": {
+      "publications": 39,
+      "citations": 715
+    },
     "sourceUpdatedDate": "2026-05-25T00:00:00.0000000Z"
   },
   {
@@ -105,6 +117,10 @@
       "location": "Cushing/Whitney Medical Library"
     },
     "bio": "Alexandria provides in-­depth reference, education, and research consultation services for Yale School of Nursing and clinical nurses at Yale New Haven Hospital.",
+    "publicationsOverview": {
+      "publications": 62,
+      "citations": 1194
+    },
     "sourceUpdatedDate": "2026-09-08T00:00:00.0000000Z"
   }
 ]

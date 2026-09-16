@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { selectCampaign, selectPreviewProfile } from "../js/campaign.js";
 import { createProfileCard } from "../js/profile-card.js";
+import { applyProfileOverrides } from "../scripts/lib/apply-profile-overrides.mjs";
 import { parseProfileHtml, validateSources } from "../scripts/lib/parse-profile.mjs";
 
 const source = { id: "alex-example", team: "Academic Research & Education", profileUrl: "https://medicine.yale.edu/profile/alex-example/" };
@@ -35,6 +37,60 @@ test("extracts optional pronouns, publication statistics, and research interests
   assert.equal(profile.pronouns, "they/them/theirs");
   assert.deepEqual(profile.publicationsOverview, { publications: 103, citations: 3611, yaleCoAuthors: 139 });
   assert.deepEqual(profile.medicalResearchInterests, ["Systematic Reviews as Topic", "Health Informatics"]);
+});
+
+test("falls back to Research at a Glance publication and citation totals", () => {
+  const profile = parseProfileHtml(page({ body: `<section class="profile-details-publications-timeline-glance"><div class="profile-details-publications-timeline-glance__stats"><div>39<span>Publications</span></div><div>715<span>Citations</span></div></div></section>` }), source);
+  assert.deepEqual(profile.publicationsOverview, { publications: 39, citations: 715 });
+});
+
+test("applies durable profile overrides after synchronization", () => {
+  const profiles = [{
+    id: "alex-example",
+    bio: "Synced biography.",
+    contact: { email: "alex@example.edu", location: "Library" },
+    publicationsOverview: { publications: 39, citations: 715 }
+  }];
+  const result = applyProfileOverrides(profiles, {
+    "alex-example": {
+      bio: "Corrected local biography.",
+      contact: { email: "corrected@example.edu" },
+      publicationsOverview: { yaleCoAuthors: 12 }
+    }
+  });
+
+  assert.deepEqual(result[0], {
+    id: "alex-example",
+    bio: "Corrected local biography.",
+    contact: { email: "corrected@example.edu", location: "Library" },
+    publicationsOverview: { publications: 39, citations: 715, yaleCoAuthors: 12 }
+  });
+});
+
+test("rejects unknown profiles and unsupported override fields", () => {
+  assert.throws(
+    () => applyProfileOverrides([{ id: "alex-example" }], { "unknown-person": { bio: "No." } }),
+    /unknown id/
+  );
+  assert.throws(
+    () => applyProfileOverrides([{ id: "alex-example" }], { "alex-example": { id: "changed" } }),
+    /unsupported field/
+  );
+});
+
+test("selects an active-team campaign and supports one-profile previews", () => {
+  const profiles = [
+    { id: "alex-example", team: "Research" },
+    { id: "bea-example", team: "Clinical" },
+    { id: "cam-example", team: "Research" }
+  ];
+  assert.deepEqual(
+    selectCampaign(profiles, "Research").map(({ id }) => id),
+    ["alex-example", "cam-example"]
+  );
+  assert.equal(selectPreviewProfile(profiles, "bea-example").team, "Clinical");
+  assert.throws(() => selectCampaign(profiles, "Unknown"), /No profiles/);
+  assert.throws(() => selectPreviewProfile(profiles, "unknown"), /No profile/);
 });
 
 test("omits absent optional fields", () => {

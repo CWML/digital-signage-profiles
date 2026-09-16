@@ -1,8 +1,11 @@
+/* All profile cards are designed for the 1920x1080 resolution of the digital signange display monitor so no responsive breakpoints are included. */
+
 :root {
   --yale-blue: #00356b;
   --yale-blue-dark: #002b57;
   --yale-gray: #4a4a4a;
   --cwml-teal: #00a0ab;
+  --cwml-green: #b8df72;
   --paper: #ffffff;
   --ink: #222222;
 }
@@ -71,22 +74,34 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 10vh 10vw;
+  padding: 15vh 8vw;
   background: var(--paper);
   overflow: hidden;
+}
+
+.profile-page::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 360px;
+  height: 260px;
+  background: rgb(0 160 171 / 18%);
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  content: "";
+  pointer-events: none;
+  z-index: 2;
 }
 
 .page-spotlight {
   position: absolute;
   top: 4vh;
-  left: 10vw;
-  z-index: 1;
+  z-index: 3;
 }
 
 .spotlight-label {
   margin: 0;
-  color: var(--cwml-teal);
-  font-size: 20px;
+  color: var(--yale-blue);
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -94,8 +109,8 @@ a {
 
 .spotlight-team {
   margin: 6px 0 0;
-  color: var(--yale-blue);
-  font-size: 16px;
+  color: var(--cwml-teal);
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -180,6 +195,11 @@ h1 {
   border-radius: 10px;
   background: #f4f6f8;
 }
+
+/* .contact-section {
+  display: flex;
+  flex-direction: column;
+} */
 
 .detail-section h2 {
   margin: 0 0 18px;

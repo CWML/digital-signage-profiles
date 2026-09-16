@@ -16,12 +16,14 @@ export function createProfileCard(profile) {
   return `
     <article class="profile-page${nameLengthClass}">
       <div class="page-spotlight">
-        <p class="spotlight-label">Staff Spotlight</p>
-        ${
-          profile.team
-            ? `<p class="spotlight-team">${escapeHtml(profile.team)}</p>`
-            : ""
-        }
+        <div>
+          <p class="spotlight-label">Staff Spotlight</p>
+          ${
+            profile.team
+              ? `<p class="spotlight-team">${escapeHtml(profile.team)}</p>`
+              : ""
+          }
+        </div>
       </div>
 
       <section class="identity-card">
