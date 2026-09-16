@@ -1,8 +1,8 @@
 # CWML Digital Signage Profiles
 
-A staff-profile display for the Cushing/Whitney Medical Library digital signage staff feature campaign. The site is designed to run as a full-screen 16:9 web view in Appspace and rotate automatically through profiles defined in `data/profiles.json`.
+A staff-profile display for the Cushing/Whitney Medical Library digital signage staff feature campaign. The site is designed to run as a full-screen 16:9 web view in Appspace and loads the generated public-profile data in `data/profiles.json`.
 
-This display pulls source information from <beatrix.yale.edu> and reorganizes and displays content in a concise, campaign-friendly manner.
+The browser never requests Beatrix directly. A GitHub Action retrieves the public `medicine.yale.edu/profile/...` pages each night and regenerates the local JSON data, avoiding CORS and live-service dependencies in the display.
 
 Hosted publicly at <https://cwml.github.io/digital-signage-profiles/>
 
@@ -13,9 +13,20 @@ digital-signage-profiles/
 ├── css/
 │   └── signage.css
 ├── data/
+│   ├── profile-sources.json
 │   └── profiles.json
 ├── js/
-│   └── signage.js
+│   ├── app.js
+│   ├── profile-card.js
+│   └── profile-service.js
+├── scripts/
+│   ├── sync-profiles.mjs
+│   └── lib/parse-profile.mjs
+├── test/
+│   └── parse-profile.test.mjs
+├── .github/workflows/
+│   └── sync-profiles.yml
+├── package.json
 ├── .gitignore
 ├── index.html
 └── README.md
@@ -33,6 +44,9 @@ Then visit <http://localhost:8000>.
 
 ## Data notes
 
-- Includes only information that is already public and approved for signage
-- Uses stable, approved portrait URLs
-- The `profileUrl` value will be used to generate the QR destination
+- `data/profile-sources.json` is the maintainer-edited list of people. Add or remove an object there, using a unique lowercase-hyphenated `id`, a non-empty signage `team`, and an HTTPS `https://medicine.yale.edu/profile/...` URL.
+- Run `npm ci`, then `npm test` to run parser and frontend-safety tests. Run `npm run sync-profiles` to refresh `data/profiles.json` locally.
+- JSON-LD provides names, credentials, biographies, email, phone, portraits, titles, affiliations/locations, canonical URLs, and source update dates. Scoped public HTML parsing supplies optional pronouns, publication totals, and Medical Research Interests.
+- Empty optional fields are omitted from the generated data, so the corresponding card sections do not appear.
+- The scheduled workflow runs at 06:15 UTC nightly (1:15 AM EST / 2:15 AM EDT), and can also be started with **Run workflow** in GitHub Actions. It runs tests first and commits only a changed `data/profiles.json` as `github-actions[bot]`.
+- To deploy, enable GitHub Pages for the repository’s `main` branch and root directory. In Appspace, point the Web View card to <https://cwml.github.io/digital-signage-profiles/>.

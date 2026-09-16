@@ -1,0 +1,33 @@
+name: Sync Beatrix profile data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 06:15 UTC is 1:15 AM EST and 2:15 AM EDT.
+    - cron: "15 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run sync-profiles
+      - name: Commit refreshed profile data
+        run: |
+          if git diff --quiet -- data/profiles.json; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/profiles.json
+          git commit -m "chore: sync Beatrix profile data"
+          git push

@@ -1,18 +1,110 @@
 [
   {
     "id": "judy-spak",
-    "name": "Judy M. Spak, MLS",
-    "pronouns": "she/her/hers",
+    "name": "Judy M Spak, MLS",
     "title": "Head of Academic Research and Education",
     "team": "Academic Research & Education",
-    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_jpg,h_1200,q_auto,w_1200/v1/yms/prod/2f7bf0ab-f6a8-4ba7-8540-9dce5d33845d",
-    "profileUrl": "https://medicine.yale.edu/profile/judy-spak/",
-    "services": [
-      "Evidence and knowledge synthesis",
-      "Expert literature searching",
-      "Health professions education research",
-      "Research and education support"
+    "pronouns": "she/her/hers",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/2f7bf0ab-f6a8-4ba7-8540-9dce5d33845d",
+    "profileUrl": "https://library.medicine.yale.edu/profile/judy-spak/",
+    "contact": {
+      "email": "judy.spak@yale.edu",
+      "phone": "+12037372961",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "As Head of Academic Research and Education at the Cushing/Whitney Medical Library, I provide expert research assistance and collaborate with faculty and learners on a broad range of topics. I am particularly interested in health professions education scholarship and the role of librarians in teaching and assessing the evidence-based information-seeking skills of trainees. I collaborate on evidence and knowledge syntheses projects by providing expert searching and methodological expertise. The Academic Research and Education team supports the Yale School of Medicine, the Physician Associate program, the Yale School of Public Health, and the Yale School of Nursing and provides exceptional research and education services to the health sciences community at Yale. When not at work, I enjoy playing with my Pembroke Welsh Corgi, watching hockey, and knitting.",
+    "medicalResearchInterests": [
+      "Competency-Based Education",
+      "Education, Medical, Continuing",
+      "Education, Medical, Graduate",
+      "Education, Medical, Undergraduate",
+      "Systematic Review",
+      "Systematic Reviews as Topic"
     ],
-    "audiences": ["YSM", "YSPH", "YSN", "PA programs"]
+    "sourceUpdatedDate": "2026-09-08T00:00:00.0000000Z"
+  },
+  {
+    "id": "alyssa-grimshaw",
+    "name": "Alyssa Ann Grimshaw, MBA, MLIS, MPH",
+    "title": "Biomedical Research and Methodology Librarian",
+    "team": "Academic Research & Education",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/8aa2a0b1-207a-40fc-a56c-a19b9e84fb9a",
+    "profileUrl": "https://medicine.yale.edu/profile/alyssa-grimshaw/",
+    "contact": {
+      "email": "alyssa.grimshaw@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Alyssa Grimshaw is a Biomedical Research and Methodology Librarian. She earned a post-master's certificate as an interprofessional informationist at Simmons University School of Library and Information Sciences. As an information expert, she collaborates on evidence synthesis and meta-research projects. Her research interests include reproducibility, reporting, and housing impacts on public health. Alyssa provides in-­depth reference, information, research and consultation services for clinical professionals and users in the health sciences community, including literature searches in support of systematic reviews, research, grants, clinical practice, animal use, teaching, and publishing. For more information about me, please visit please page.",
+    "publicationsOverview": {
+      "publications": 103,
+      "citations": 3640,
+      "yaleCoAuthors": 139
+    },
+    "medicalResearchInterests": [
+      "Systematic Reviews as Topic"
+    ],
+    "sourceUpdatedDate": "2026-08-18T00:00:00.0000000Z"
+  },
+  {
+    "id": "caitlin-meyer",
+    "name": "Caitlin Meyer, MLS",
+    "title": "Research and Education Librarian",
+    "team": "Academic Research & Education",
+    "pronouns": "she/her/hers",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/7901c3a1-fce2-43a9-8b64-446872e2ddb8",
+    "profileUrl": "https://medicine.yale.edu/profile/caitlin-meyer/",
+    "contact": {
+      "email": "caitlin.meyer@yale.edu",
+      "location": "Medical Library"
+    },
+    "bio": "Caitlin Meyer is a librarian at Yale’s Harvey Cushing/John Hay Whitney Medical Library. She coordinates the library’s instruction program and supports the students and faculty of the School of Medicine’s Physician Associate Program and Physician Assistant Online Program. Caitlin has a Master of Library and Information Science degree from UCLA and a Bachelor’s degree in Communication Studies from Vanderbilt. Outside of work, Caitlin is an avid hiker, camper, and fan of bluegrass music.",
+    "medicalResearchInterests": [
+      "Access to Information",
+      "Information Literacy",
+      "Libraries"
+    ],
+    "sourceUpdatedDate": "2023-10-09T00:00:00.0000000Z"
+  },
+  {
+    "id": "kate-nyhan",
+    "name": "Kate Nyhan, MLS",
+    "title": "Research and Education Librarian",
+    "team": "Academic Research & Education",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/85272403-05dc-43bc-9329-af30669a2ed3",
+    "profileUrl": "https://ysph.yale.edu/profile/kate-nyhan/",
+    "contact": {
+      "email": "kate.nyhan@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Kate Nyhan is a research and education librarian for public health at Cushing/Whitney Medical Library and a lecturer in environmental health sciences at Yale School of Public Health. She earned a post-master's certificate as an interprofessional informationist at Simmons University School of Library and Information Sciences. As an information expert, she contributes to evidence synthesis and metaresearch projects. Her research interests include research waste, reproducibility, reporting, and the information behavior of the public health workforce.",
+    "sourceUpdatedDate": "2026-05-25T00:00:00.0000000Z"
+  },
+  {
+    "id": "madison-jurgens",
+    "name": "Madison Jurgens",
+    "title": "Biomedical Research and Methodology Librarian",
+    "team": "Academic Research & Education",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/5803d5fb-06f6-45db-a5e4-7f3083851485",
+    "profileUrl": "https://medicine.yale.edu/profile/madison-jurgens/",
+    "contact": {
+      "email": "madison.jurgens@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Madison supports Yale School of Medicine affiliates by providing research consultations, developing educational programs, and participating in collaborative projects. She specializes in evidence synthesis methodologies, such as systematic and scoping reviews and offers expert guidance throughout the research lifecycle, from research conceptualization to preparing manuscripts for publication. Madison holds a Master of Library and Information Science (MLIS) from San José State University and a BA in Anthropology from the University of California, Irvine. Prior to joining Yale, she served as an Informationist at Columbia University Irving Medical Center and as an Information Desk and Departmental Library Intern at the University of Pennsylvania.",
+    "sourceUpdatedDate": "2026-09-15T00:00:00.0000000Z"
+  },
+  {
+    "id": "alexandria-brackett",
+    "name": "Alexandria Leigh Brackett, MLIS, MA",
+    "title": "Research & Education Nursing Librarian",
+    "team": "Academic Research & Education",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/8c72fe39-43f5-46d5-97e3-75cb7ef44de4",
+    "profileUrl": "https://medicine.yale.edu/profile/alexandria-brackett/",
+    "contact": {
+      "email": "alexandria.brackett@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Alexandria provides in-­depth reference, education, and research consultation services for Yale School of Nursing and clinical nurses at Yale New Haven Hospital.",
+    "sourceUpdatedDate": "2026-09-08T00:00:00.0000000Z"
   }
 ]

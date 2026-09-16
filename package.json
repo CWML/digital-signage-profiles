@@ -1,0 +1,12 @@
+{
+  "name": "cwml-digital-signage-profiles",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-profiles": "node scripts/sync-profiles.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2"
+  }
+}
