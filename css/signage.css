@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "Yale New";
-  src: url("../assets/fonts/YaleNew-Roman.otf") format("opentype");
+  src: url("../assets/fonts/YaleNew-Roman.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Yale New";
-  src: url("../assets/fonts/YaleNew-Bold.otf") format("opentype");
+  src: url("../assets/fonts/YaleNew-Bold.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "Mallory";
-  src: url("../assets/fonts/Mallory-Book.otf") format("opentype");
+  src: url("../assets/fonts/Mallory-Book.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,7 @@
 
 @font-face {
   font-family: "Mallory";
-  src: url("../assets/fonts/Mallory-Bold.otf") format("opentype");
+  src: url("../assets/fonts/Mallory-Bold.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 700;

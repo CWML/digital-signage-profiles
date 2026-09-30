@@ -4,8 +4,9 @@
 Thumbs.db
 node_modules/
 
-# Locally installed, licensed typefaces; use the CSS fallbacks in the repository.
-assets/fonts/
+# Keep local source typefaces private; publish only the webfont files used by the sign.
+assets/fonts/*
+!assets/fonts/*.woff2
 
 # Local configuration and generated test output.
 .env
