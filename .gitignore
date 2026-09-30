@@ -4,9 +4,8 @@
 Thumbs.db
 node_modules/
 
-# Keep local source typefaces private; publish only the webfont files used by the sign.
-assets/fonts/*
-!assets/fonts/*.woff2
+# Keep locally installed typefaces private; the sign uses Yale-hosted webfonts.
+assets/fonts/
 
 # Local configuration and generated test output.
 .env

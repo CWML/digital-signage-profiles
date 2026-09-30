@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "Yale New";
-  src: url("../assets/fonts/YaleNew-Roman.woff2") format("woff2");
+  src: url("https://www.yale.edu/sites/all/themes/yale_blue/fonts/yalenew-roman-webfont.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Yale New";
-  src: url("../assets/fonts/YaleNew-Bold.woff2") format("woff2");
+  src: url("https://www.yale.edu/sites/all/themes/yale_blue/fonts/yalenew-bold-webfont.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "Mallory";
-  src: url("../assets/fonts/Mallory-Book.woff2") format("woff2");
+  src: url("https://www.yale.edu/sites/all/themes/yale_blue/fonts_new/Mallory/Mallory/Mallory-Light.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,7 @@
 
 @font-face {
   font-family: "Mallory";
-  src: url("../assets/fonts/Mallory-Bold.woff2") format("woff2");
+  src: url("https://www.yale.edu/sites/all/themes/yale_blue/fonts_new/Mallory/Mallory/Mallory-Bold.woff2") format("woff2");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
