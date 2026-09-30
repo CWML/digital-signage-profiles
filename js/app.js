@@ -2,8 +2,13 @@ import { selectCampaign, selectPreviewProfile } from "./campaign.js";
 import { getProfiles, getSignageConfig } from "./profile-service.js";
 import { createProfileCard } from "./profile-card.js";
 
+const SIGNAGE_WIDTH = 1920;
+const SIGNAGE_HEIGHT = 1080;
+
 async function initializeSignage() {
   const display = document.querySelector("#signage");
+  fitSignageToViewport(display);
+  window.addEventListener("resize", () => fitSignageToViewport(display));
 
   try {
     const [profiles, config] = await Promise.all([
@@ -36,6 +41,14 @@ async function initializeSignage() {
     display.innerHTML =
       '<p class="error">Unable to load staff profiles.</p>';
   }
+}
+
+function fitSignageToViewport(display) {
+  const scale = Math.min(
+    window.innerWidth / SIGNAGE_WIDTH,
+    window.innerHeight / SIGNAGE_HEIGHT
+  );
+  display.style.setProperty("--signage-scale", String(scale));
 }
 
 function sizePortraitFrame(display) {
