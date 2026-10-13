@@ -55,7 +55,8 @@ test("applies durable profile overrides after synchronization", () => {
     "alex-example": {
       bio: "Corrected local biography.",
       contact: { email: "corrected@example.edu" },
-      publicationsOverview: { yaleCoAuthors: 12 }
+      publicationsOverview: { yaleCoAuthors: 12 },
+      interestsLabel: "Professional Interests"
     }
   });
 
@@ -63,7 +64,8 @@ test("applies durable profile overrides after synchronization", () => {
     id: "alex-example",
     bio: "Corrected local biography.",
     contact: { email: "corrected@example.edu", location: "Library" },
-    publicationsOverview: { publications: 39, citations: 715, yaleCoAuthors: 12 }
+    publicationsOverview: { publications: 39, citations: 715, yaleCoAuthors: 12 },
+    interestsLabel: "Professional Interests"
   });
 });
 
@@ -117,4 +119,15 @@ test("escapes remote profile text and blocks unsafe URLs in the template rendere
   assert.match(card, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
   assert.match(card, /src="#"/);
   assert.doesNotMatch(card, /<script>alert\(1\)<\/script>/);
+});
+
+test("renders a profile-specific interests label", () => {
+  const card = createProfileCard({
+    name: "Casey Example",
+    title: "Clinical Librarian",
+    photoUrl: "https://images.example.edu/casey.jpg",
+    medicalResearchInterests: ["Health equity"],
+    interestsLabel: "Professional Interests"
+  });
+  assert.match(card, /<h2>Professional Interests<\/h2>/);
 });

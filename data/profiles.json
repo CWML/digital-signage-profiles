@@ -109,7 +109,7 @@
     "id": "alexandria-brackett",
     "name": "Alexandria Leigh Brackett, MLIS, MA",
     "title": "Research & Education Nursing Librarian",
-    "team": "Academic Research & Education",
+    "team": "Clinical Research & Education",
     "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/8c72fe39-43f5-46d5-97e3-75cb7ef44de4",
     "profileUrl": "https://medicine.yale.edu/profile/alexandria-brackett/",
     "contact": {
@@ -122,5 +122,94 @@
       "citations": 1231
     },
     "sourceUpdatedDate": "2026-09-27T00:00:00.0000000Z"
+  },
+  {
+    "id": "zsuzsanna-nemeth",
+    "name": "Zsuzsanna Nemeth, MLIS",
+    "title": "Head of Clinical Research and Education",
+    "team": "Clinical Research & Education",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/13970cbf-2f38-4c70-a308-485758d52e18",
+    "profileUrl": "https://medicine.yale.edu/profile/zsuzsanna-nemeth/",
+    "contact": {
+      "email": "zsuzsanna.nemeth@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Zsuzsanna Nemeth is Head of Clinical Research and Education at the Cushing/Whitney Medical Library. She leads a team of librarians who provide services and build partnerships supporting clinical care, research, and education across Yale New Haven Health System and the Yale School of Medicine. Working closely with clinicians, trainees, faculty, and health-system colleagues, Zsuzsanna helps connect care teams with timely, evidence-based information and specialized library expertise. Her work supports informed clinical decision-making, lifelong learning, and the integration of high-quality evidence into patient care.",
+    "publicationsOverview": {
+      "publications": 14,
+      "citations": 303
+    },
+    "sourceUpdatedDate": "2026-10-09T00:00:00.0000000Z"
+  },
+  {
+    "id": "melissa-funaro",
+    "name": "Melissa C Funaro, MLS, MS",
+    "title": "Clinical Research and Education Librarian",
+    "team": "Clinical Research & Education",
+    "pronouns": "she/her/hers",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/544bc047-00f5-42ae-ad85-36b0d0521700",
+    "profileUrl": "https://medicine.yale.edu/profile/melissa-funaro/",
+    "contact": {
+      "email": "melissa.funaro@yale.edu",
+      "phone": "+12037855321",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "I am a Clinical Librarian at the Cushing/Whitney Medical Library dedicated to serving the research needs of the Medical Campus. I am a point of contact for all things library, including support for literature searching and citation management software programs such as EndNote. Please contact me with your questions.",
+    "publicationsOverview": {
+      "publications": 105,
+      "citations": 2252
+    },
+    "sourceUpdatedDate": "2026-09-28T00:00:00.0000000Z"
+  },
+  {
+    "id": "casey-phillips",
+    "name": "Casey Phillips, AHIP",
+    "title": "Clinical Research and Education Librarian",
+    "team": "Clinical Research & Education",
+    "pronouns": "she/her/hers",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/af1f32a7-d96d-40be-88d2-de83ba214476",
+    "profileUrl": "https://medicine.yale.edu/profile/casey-phillips/",
+    "contact": {
+      "email": "casey.phillips@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Casey Phillips, MLIS, AHIP, is a Clinical Research and Education Librarian for the Cushing/Whitney Medical Library at Yale University. She provides training, consultation, and literature searches in support of evidence synthesis reviews, patient care, clinical research, animal welfare, and grants. Casey is an active contributor to the health sciences library profession, having served in leadership and volunteer roles within chapters of the Medical Library Association, including her current service with the North Atlantic Health Sciences Libraries Chapter (NAHSL). Her professional interests include advancing health equity, supporting evidence-based practice, and exploring the intersections of climate change and public health.",
+    "sourceUpdatedDate": "2026-10-09T00:00:00.0000000Z",
+    "publicationsOverview": {
+      "publications": 2,
+      "citations": 3
+    },
+    "interestsLabel": "Professional Interests",
+    "medicalResearchInterests": [
+      "Health equity",
+      "Evidence-based practice",
+      "Climate change and public health"
+    ]
+  },
+  {
+    "id": "carly-schanock",
+    "name": "Carly Schanock, MLIS",
+    "title": "Clinical Research and Education Librarian",
+    "team": "Clinical Research & Education",
+    "pronouns": "she/her/hers, they/them/theirs",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/cdb2e996-9c90-4ed2-9aaf-daabfdfc57aa",
+    "profileUrl": "https://medicine.yale.edu/profile/carly-schanock/",
+    "contact": {
+      "email": "carly.schanock@yale.edu",
+      "location": "Harvey Cushing/John Hay Whitney Medical Library"
+    },
+    "bio": "Carly Schanock is a Clinical Research and Education Librarian specializing in artificial intelligence (AI) applications in clinical research, clinical practice, and scholarly communication. Her other work centers on evidence synthesis, including systematic and scoping reviews, clinical practice guidelines, and advanced literature searching. She collaborates with researchers and healthcare professionals throughout the research lifecycle, providing expertise in information retrieval, evidence-based decision-making, and emerging technologies. Their teaching and consultation activities focus on helping learners and investigators effectively evaluate, integrate, and apply AI and information resources to support research, publishing, and patient care.",
+    "medicalResearchInterests": [
+      "Artificial Intelligence",
+      "Information Science",
+      "Information Services",
+      "Research",
+      "Systematic Review"
+    ],
+    "sourceUpdatedDate": "2026-10-09T00:00:00.0000000Z",
+    "publicationsOverview": {
+      "publications": 4,
+      "citations": 55
+    }
   }
 ]

@@ -26,7 +26,27 @@
   },
   {
     "id": "alexandria-brackett",
-    "team": "Academic Research & Education",
+    "team": "Clinical Research & Education",
     "profileUrl": "https://medicine.yale.edu/profile/alexandria-brackett/"
+  },
+  {
+    "id": "zsuzsanna-nemeth",
+    "team": "Clinical Research & Education",
+    "profileUrl": "https://medicine.yale.edu/profile/zsuzsanna-nemeth/"
+  },
+  {
+    "id": "melissa-funaro",
+    "team": "Clinical Research & Education",
+    "profileUrl": "https://medicine.yale.edu/profile/melissa-funaro/"
+  },
+  {
+    "id": "casey-phillips",
+    "team": "Clinical Research & Education",
+    "profileUrl": "https://medicine.yale.edu/profile/casey-phillips/"
+  },
+  {
+    "id": "carly-schanock",
+    "team": "Clinical Research & Education",
+    "profileUrl": "https://medicine.yale.edu/profile/carly-schanock/"
   }
 ]

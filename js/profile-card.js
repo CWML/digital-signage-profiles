@@ -5,7 +5,8 @@ export function createProfileCard(profile) {
   );
   const biographySection = createBiographySection(profile.bio);
   const researchSection = createResearchSection(
-    profile.medicalResearchInterests
+    profile.medicalResearchInterests,
+    profile.interestsLabel
   );
 
   const hasCardDetails = contactSection || publicationsSection;
@@ -200,14 +201,14 @@ function createBiographySection(bio) {
   `;
 }
 
-function createResearchSection(interests) {
+function createResearchSection(interests, label = "Medical Research Interests") {
   if (!Array.isArray(interests) || interests.length === 0) {
     return "";
   }
 
   return `
     <section class="content-section research-interests">
-      <h2>Medical Research Interests</h2>
+      <h2>${escapeHtml(label)}</h2>
 
       <ul class="interest-list">
         ${interests

@@ -1,5 +1,27 @@
 {
   "alyssa-grimshaw": {
     "bio": "Alyssa Grimshaw is a Biomedical Research and Methodology Librarian. She earned a post-master's certificate as an interprofessional informationist at Simmons University School of Library and Information Sciences. As an information expert, she collaborates on evidence synthesis and meta-research projects. Her research interests include reproducibility, reporting, and housing impacts on public health. Alyssa provides in-­depth reference, information, research and consultation services for clinical professionals and users in the health sciences community, including literature searches in support of systematic reviews, research, grants, clinical practice, animal use, teaching, and publishing."
+  },
+  "casey-phillips": {
+    "publicationsOverview": {
+      "publications": 2,
+      "citations": 3
+    },
+    "interestsLabel": "Professional Interests",
+    "medicalResearchInterests": [
+      "Health equity",
+      "Evidence-based practice",
+      "Climate change and public health"
+    ]
+  },
+  "melissa-funaro": {
+    "bio": "I am a Clinical Librarian at the Cushing/Whitney Medical Library dedicated to serving the research needs of the Medical Campus. I am a point of contact for all things library, including support for literature searching and citation management software programs such as EndNote. Please contact me with your questions."
+  },
+  "carly-schanock": {
+    "pronouns": "she/her/hers, they/them/theirs",
+    "publicationsOverview": {
+      "publications": 4,
+      "citations": 55
+    }
   }
 }
