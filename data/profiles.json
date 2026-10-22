@@ -200,7 +200,11 @@
       "email": "carly.schanock@yale.edu",
       "location": "Harvey Cushing/John Hay Whitney Medical Library"
     },
-    "bio": "Carly Schanock is a Clinical Research and Education Librarian specializing in artificial intelligence (AI) applications in clinical research, clinical practice, and scholarly communication. Her other work centers on evidence synthesis, including systematic and scoping reviews, clinical practice guidelines, and advanced literature searching. She collaborates with researchers and healthcare professionals throughout the research lifecycle, providing expertise in information retrieval, evidence-based decision-making, and emerging technologies. Their teaching and consultation activities focus on helping learners and investigators effectively evaluate, integrate, and apply AI and information resources to support research, publishing, and patient care.",
+    "bio": "Carly Schanock is a Clinical Research and Education Librarian specializing in artificial intelligence (AI) applications in clinical research, clinical practice, and scholarly communication. Her other work centers on evidence synthesis, including systematic and scoping reviews, clinical practice guidelines, and advanced literature searching. She collaborates with researchers and healthcare professionals throughout the research lifecycle, providing expertise in information retrieval, evidence-based decision-making, and emerging technologies. Their teaching and consultation activities focus on helping learners and investigators effectively evaluate, integrate, and apply AI and information resources to support research, publishing, and patient care. In winter 2027, they are starting an AI Applications for Health Sciences online graduate certificate at Northeastern University's Bouvé College of Health Sciences",
+    "publicationsOverview": {
+      "publications": 4,
+      "citations": 55
+    },
     "medicalResearchInterests": [
       "Artificial Intelligence",
       "Information Science",
@@ -208,10 +212,6 @@
       "Research",
       "Systematic Review"
     ],
-    "sourceUpdatedDate": "2026-10-09T00:00:00.0000000Z",
-    "publicationsOverview": {
-      "publications": 4,
-      "citations": 55
-    }
+    "sourceUpdatedDate": "2026-10-21T00:00:00.0000000Z"
   }
 ]
