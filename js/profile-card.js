@@ -8,6 +8,7 @@ export function createProfileCard(profile) {
     profile.medicalResearchInterests,
     profile.interestsLabel
   );
+  const portrait = createPortrait(profile);
 
   const hasCardDetails = contactSection || publicationsSection;
   const nameLengthClass = profile.name.length > 30
@@ -53,13 +54,7 @@ export function createProfileCard(profile) {
           }
         </div>
 
-        <div class="portrait-container">
-          <img
-            class="portrait"
-            src="${safeHttpsUrl(profile.photoUrl)}"
-            alt="Portrait of ${escapeHtml(profile.name)}"
-          />
-        </div>
+        ${portrait}
       </section>
 
       <div class="profile-body">
@@ -67,6 +62,21 @@ export function createProfileCard(profile) {
         ${researchSection}
       </div>
     </article>
+  `;
+}
+
+function createPortrait(profile) {
+  const photoUrl = safeHttpsUrl(profile.photoUrl);
+  if (!photoUrl) return "";
+
+  return `
+    <div class="portrait-container">
+      <img
+        class="portrait"
+        src="${photoUrl}"
+        alt="Portrait of ${escapeHtml(profile.name)}"
+      />
+    </div>
   `;
 }
 
@@ -231,8 +241,8 @@ function escapeHtml(value) {
 function safeHttpsUrl(value) {
   try {
     const url = new URL(value);
-    return url.protocol === "https:" ? escapeHtml(url.href) : "#";
+    return url.protocol === "https:" ? escapeHtml(url.href) : undefined;
   } catch {
-    return "#";
+    return undefined;
   }
 }

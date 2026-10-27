@@ -32,11 +32,11 @@ export function parseProfileHtml(html, source) {
   const person = extractPersonJsonLd($);
   const name = withCredentials(person.name, person.honorificSuffix);
   const title = firstString(person.jobTitle);
-  const photoUrl = httpsUrl(person.image?.url, "image URL");
+  const photoUrl = optionalHttpsUrl(person.image?.url, "image URL");
   const profileUrl = httpsUrl(person.url ?? source.profileUrl, "profile URL");
 
-  if (!name || !title || !photoUrl) {
-    throw new Error("ProfilePage JSON-LD is missing a required name, job title, or image URL.");
+  if (!name || !title) {
+    throw new Error("ProfilePage JSON-LD is missing a required name or job title.");
   }
 
   const contact = omitEmpty({
@@ -188,6 +188,10 @@ function httpsUrl(value, field) {
     // Fall through to the concise validation error below.
   }
   throw new Error(`ProfilePage JSON-LD has an invalid ${field}.`);
+}
+
+function optionalHttpsUrl(value, field) {
+  return cleanText(value) ? httpsUrl(value, field) : undefined;
 }
 
 function firstString(value) {

@@ -48,5 +48,40 @@
     "id": "carly-schanock",
     "team": "Clinical Research & Education",
     "profileUrl": "https://medicine.yale.edu/profile/carly-schanock/"
+  },
+  {
+    "id": "lei-wang",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/lei-wang/"
+  },
+  {
+    "id": "justin-demayo",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/justin-demayo/"
+  },
+  {
+    "id": "sofia-fertuzinhos",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/sofia-fertuzinhos/"
+  },
+  {
+    "id": "rolando-milian",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/rolando-milian/"
+  },
+  {
+    "id": "maximilian-wegener",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/maximilian-wegener/"
+  },
+  {
+    "id": "william-sudhoff",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/william-sudhoff/"
+  },
+  {
+    "id": "marika-basagoitia",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/marika-basagoitia/"
   }
 ]

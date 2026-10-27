@@ -213,5 +213,130 @@
       "Systematic Review"
     ],
     "sourceUpdatedDate": "2026-10-21T00:00:00.0000000Z"
+  },
+  {
+    "id": "lei-wang",
+    "name": "Lei Wang",
+    "title": "Assistant Director Technology and Innovation",
+    "team": "Technology and Innovation",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/aa9ba5ad-0724-44ba-884c-b3b9f386bb60",
+    "profileUrl": "https://medicine.yale.edu/profile/lei-wang/",
+    "contact": {
+      "email": "lei.wang@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "sourceUpdatedDate": "2023-07-28T00:00:00.0000000Z"
+  },
+  {
+    "id": "justin-demayo",
+    "name": "Justin DeMayo",
+    "title": "Emerging Technologies Engineer",
+    "team": "Technology and Innovation",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/d36b64ef-7999-4fd5-9610-95977eb8e59d",
+    "profileUrl": "https://medicine.yale.edu/profile/justin-demayo/",
+    "contact": {
+      "email": "justin.demayo@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Justin supports the medical library’s researchers, staff, and mission by exploring emerging technologies and engineering the systems and applications that put them to use, spanning infrastructure, access, reliability, and application development. His focus includes cloud infrastructure, automation, and evaluating and applying AI and other emerging technologies to support the medical school’s mission. A certified Carpentries instructor, Justin teaches courses on computational foundations, including the command line, Git and GitHub, Python and data analysis, reproducible containers, and AI tools for research. Current offerings can be found here. Workshop materials and other projects are available on the CWML GitHub page.",
+    "medicalResearchInterests": [
+      "Artificial Intelligence"
+    ],
+    "sourceUpdatedDate": "2026-10-21T00:00:00.0000000Z"
+  },
+  {
+    "id": "sofia-fertuzinhos",
+    "name": "Sofia Fertuzinhos, PhD",
+    "title": "Research & Education Librarian for Bioinformatics",
+    "team": "Technology and Innovation",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/9debb07e-02f4-4bc8-a6f1-cdf158afe42b",
+    "profileUrl": "https://medicine.yale.edu/profile/sofia-fertuzinhos/",
+    "contact": {
+      "email": "sofia.fertuzinhos@yale.edu",
+      "phone": "+12037857514",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Sofia Fertuzinhos, PhD, is the Research and Education Librarian for Bioinformatics at Yale’s Harvey Cushing/John Hay Whitney Medical Library. She provides individualized bioinformatics support and consulting to basic and biomedical researchers, helping them navigate biological databases, plan sequencing projects, analyze next-generation sequencing data, and use computational tools for gene annotation, transcriptomics, pathway analysis, visualization, and reproducible research. Sofia also develops and teaches workshops on bioinformatics resources and practical data-analysis methods for the Yale research community. Sofia earned a joint PhD in Biochemistry from Yale University and the University of Coimbra, graduating summa cum laude. Her doctoral and postdoctoral research at Yale focused on neuroscience and the development of neural cell types, integrating molecular, cellular, and systems-level approaches. Her work examined topics including cortical inhibitory-neuron development, neural-circuit maturation, transcriptomic development, and mechanisms relevant to neurological disease. With experience in wet-lab neuroscience, RNA sequencing, mouse genetics, microscopy, molecular biology, and computational analysis, Sofia helps researchers make rigorous and effective use of Yale’s bioinformatics and research-computing resources.",
+    "publicationsOverview": {
+      "publications": 11,
+      "citations": 3656,
+      "yaleCoAuthors": 30
+    },
+    "sourceUpdatedDate": "2026-10-15T00:00:00.0000000Z"
+  },
+  {
+    "id": "rolando-milian",
+    "name": "Rolando Garcia-Milian, MLS, AHIP",
+    "title": "Biomedical Sciences Research Support Librarian and Lecturer in Epidemiology",
+    "team": "Technology and Innovation",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/259c1f59-7a05-483b-ad07-388a1ddc6c21",
+    "profileUrl": "https://ysph.yale.edu/profile/rolando-milian/",
+    "contact": {
+      "email": "rolando.milian@yale.edu",
+      "phone": "+12037856194",
+      "location": "Bioinformatics Support Hub"
+    },
+    "bio": "Rolando Garcia-Milian is a bioinformatics professional who serves as a member of the Bioinformatics Support Hub, Cushing/Whitney Medical Library, and the Yale/NIDA Neuroproteomics Center at Yale School of Medicine. He also lectures in Epidemiology for the Environmental Health Sciences Department at Yale School of Public Health. Rolando began his academic journey at the University of Havana, where he earned a degree in biology and worked on the molecular basis of Human Papillomavirus-associated diseases, such as cervical cancer, regarding their response to cytokines. At Yale School of Medicine, he offers comprehensive bioinformatics support on omics data analysis, including training, consultation, and collaboration on various research projects. With authorship or co-authorship of over 70 research papers and book chapters, Rolando is extensively published in his field. Outside of his professional life, he enjoys gardening, fine arts, reading, running, and hiking.",
+    "publicationsOverview": {
+      "publications": 71,
+      "citations": 1443,
+      "yaleCoAuthors": 98
+    },
+    "medicalResearchInterests": [
+      "Chemicals and Drugs",
+      "Diseases",
+      "Genomics",
+      "Information Science",
+      "Metabolomics",
+      "Proteomics"
+    ],
+    "sourceUpdatedDate": "2026-09-27T00:00:00.0000000Z"
+  },
+  {
+    "id": "maximilian-wegener",
+    "name": "Maximilian Wegener, MPH",
+    "title": "Biomedical Informatics Librarian",
+    "team": "Technology and Innovation",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/98538bb5-646e-4dc1-83b6-cf675edc9acb",
+    "profileUrl": "https://medicine.yale.edu/profile/maximilian-wegener/",
+    "contact": {
+      "email": "maximilian.wegener@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Max Wegener is a Biomedical Informatics Librarian specializing in research data, programming, and computational methods for biomedical and public health research. An epidemiologist by training, he brings more than a decade of experience in infectious disease surveillance and HIV/hepatitis C research to his work with Yale investigators. His work centers on helping researchers find, retrieve, clean, analyze, and share data, including large clinical and population datasets such as the NIH All of Us Research Program. He collaborates with faculty, staff, and students throughout the research lifecycle, providing expertise in R programming, statistical analysis, reproducible research practices, and data retrieval through APIs and web scraping. His teaching and consultation activities focus on building practical, hands-on data skills, including AI-assisted coding, supported by free, open training materials he develops for learners at Yale and beyond.",
+    "publicationsOverview": {
+      "publications": 13,
+      "citations": 58
+    },
+    "medicalResearchInterests": [
+      "Artificial Intelligence",
+      "Epidemiology",
+      "Research"
+    ],
+    "sourceUpdatedDate": "2026-10-19T00:00:00.0000000Z"
+  },
+  {
+    "id": "william-sudhoff",
+    "name": "William Sudhoff",
+    "title": "IT Support Technician 2",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/william-sudhoff/",
+    "contact": {
+      "email": "william.sudhoff@yale.edu"
+    },
+    "sourceUpdatedDate": "2026-10-13T00:00:00.0000000Z"
+  },
+  {
+    "id": "marika-basagoitia",
+    "name": "Marika Basagoitia, MS",
+    "title": "Librarian, Web Services",
+    "team": "Technology and Innovation",
+    "profileUrl": "https://medicine.yale.edu/profile/marika-basagoitia/",
+    "contact": {
+      "email": "marika.basagoitia@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Marika is responsible for developing, maintaining, and improving the library’s digital presence and user experience. She earned her Master of Science in Computer Science from the University of Colorado Boulder.",
+    "sourceUpdatedDate": "2026-10-27T00:00:00.0000000Z"
   }
 ]

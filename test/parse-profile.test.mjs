@@ -96,12 +96,13 @@ test("selects an active-team campaign and supports one-profile previews", () => 
 });
 
 test("omits absent optional fields", () => {
-  const minimal = { "@type": "Person", name: "Alex Example", jobTitle: ["Research Librarian"], image: { url: "https://images.example.edu/alex.jpg" }, url: source.profileUrl };
+  const minimal = { "@type": "Person", name: "Alex Example", jobTitle: ["Research Librarian"], url: source.profileUrl };
   const profile = parseProfileHtml(page({ person: minimal }), source);
   assert.equal("contact" in profile, false);
   assert.equal("pronouns" in profile, false);
   assert.equal("publicationsOverview" in profile, false);
   assert.equal("medicalResearchInterests" in profile, false);
+  assert.equal("photoUrl" in profile, false);
 });
 
 test("rejects missing or invalid ProfilePage JSON-LD", () => {
@@ -117,7 +118,7 @@ test("escapes remote profile text and blocks unsafe URLs in the template rendere
   const card = createProfileCard({ name: '<img src=x onerror="alert(1)">', title: "<script>alert(1)</script>", team: "A & B", photoUrl: "javascript:alert(1)", profileUrl: "javascript:alert(1)", bio: "<b>Not markup</b>", medicalResearchInterests: ["<em>Safe text</em>"] });
   assert.match(card, /&lt;img src=x onerror=&quot;alert\(1\)&quot;&gt;/);
   assert.match(card, /&lt;script&gt;alert\(1\)&lt;\/script&gt;/);
-  assert.match(card, /src="#"/);
+  assert.doesNotMatch(card, /portrait-container/);
   assert.doesNotMatch(card, /<script>alert\(1\)<\/script>/);
 });
 
