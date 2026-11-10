@@ -333,5 +333,85 @@
     },
     "bio": "Marika is responsible for developing, maintaining, and improving the library’s digital presence and user experience. She earned her Master of Science in Computer Science from the University of Colorado Boulder.",
     "sourceUpdatedDate": "2026-10-27T00:00:00.0000000Z"
+  },
+  {
+    "id": "megan-nance",
+    "name": "Megan Nance",
+    "title": "Head of Access & Delivery Services",
+    "team": "Access and Delivery Services",
+    "pronouns": "she/her/hers",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/ef842cac-b73f-4316-8ea3-ff28d886dce3",
+    "profileUrl": "https://medicine.yale.edu/profile/megan-nance/",
+    "contact": {
+      "email": "megan.nance@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Megan is the Head of Access and Delivery Services at Yale's Cushing/Whitney Medical Library. She collaborates with members of the Access and Delivery Services team to ensure students, faculty, and staff are able to access collection materials quickly and efficiently via VPN, Interlibrary Loan, Mail to Address, BorrowDirect, and more. Megan has a Masters of Information degree from Rutgers, The State University of New Jersey and a Bachelor's degree in Studio Art from Palm Beach Atlantic University.",
+    "sourceUpdatedDate": "2024-02-06T00:00:00.0000000Z"
+  },
+  {
+    "id": "jeffrey-t-brown",
+    "name": "Jeffrey Brown",
+    "title": "Lead Library Services Assistant 5",
+    "team": "Access and Delivery Services",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/5f3085e8-ba7b-4954-81d4-9f00d65b4026",
+    "profileUrl": "https://medicine.yale.edu/profile/jeffrey-t-brown/",
+    "contact": {
+      "email": "jeffrey.t.brown@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "sourceUpdatedDate": "2026-09-04T00:00:00.0000000Z"
+  },
+  {
+    "id": "pamela-gibson",
+    "name": "Pamela Gibson",
+    "title": "Library Services Assistant IV, Access & Delivery Services",
+    "team": "Access and Delivery Services",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/71011ebf-7531-4366-8a23-6b20f606aa95",
+    "profileUrl": "https://medicine.yale.edu/profile/pamela-gibson/",
+    "contact": {
+      "email": "pamela.gibson@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "sourceUpdatedDate": "2023-07-28T00:00:00.0000000Z"
+  },
+  {
+    "id": "cara-jordan",
+    "name": "Cara Jordan",
+    "title": "Library Services Assistant IV",
+    "team": "Access and Delivery Services",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/8a42c1a5-188e-4a6b-bca1-a47ecbeda4ed",
+    "profileUrl": "https://medicine.yale.edu/profile/cara-jordan/",
+    "contact": {
+      "email": "cara.jordan@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "sourceUpdatedDate": "2026-11-05T00:00:00.0000000Z"
+  },
+  {
+    "id": "dorota-peglow",
+    "name": "Dorota Peglow",
+    "title": "Library Services Assistant 4",
+    "team": "Access and Delivery Services",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/120ca947-9b86-4010-8b5c-340e5476458f",
+    "profileUrl": "https://medicine.yale.edu/profile/dorota-peglow/",
+    "contact": {
+      "email": "dorota.peglow@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "sourceUpdatedDate": "2023-07-28T00:00:00.0000000Z"
+  },
+  {
+    "id": "l-sanders",
+    "name": "Lisa Sanders",
+    "title": "Library Services Assistant 4",
+    "team": "Access and Delivery Services",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/6b3ab46c-e16d-479c-8984-541c2b4970ba",
+    "profileUrl": "https://medicine.yale.edu/profile/l-sanders/",
+    "contact": {
+      "email": "l.sanders@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "sourceUpdatedDate": "2023-07-28T00:00:00.0000000Z"
   }
 ]
