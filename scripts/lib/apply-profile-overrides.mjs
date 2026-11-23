@@ -9,7 +9,8 @@ const OVERRIDABLE_FIELDS = new Set([
   "bio",
   "publicationsOverview",
   "medicalResearchInterests",
-  "interestsLabel"
+  "interestsLabel",
+  "professionalOrganizations"
 ]);
 
 const CONTACT_FIELDS = new Set(["email", "phone", "location"]);

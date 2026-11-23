@@ -108,5 +108,25 @@
     "id": "l-sanders",
     "team": "Access and Delivery Services",
     "profileUrl": "https://medicine.yale.edu/profile/l-sanders/"
+  },
+  {
+    "id": "melissa-grafe",
+    "team": "Medical Historical Library",
+    "profileUrl": "https://medicine.yale.edu/profile/melissa-grafe/"
+  },
+  {
+    "id": "katherine-isham",
+    "team": "Medical Historical Library",
+    "profileUrl": "https://medicine.yale.edu/profile/katherine-isham/"
+  },
+  {
+    "id": "christopher-zollo",
+    "team": "Medical Historical Library",
+    "profileUrl": "https://medicine.yale.edu/profile/christopher-zollo/"
+  },
+  {
+    "id": "laura-miller",
+    "team": "Medical Historical Library",
+    "profileUrl": "https://medicine.yale.edu/profile/laura-miller/"
   }
 ]

@@ -56,7 +56,8 @@ test("applies durable profile overrides after synchronization", () => {
       bio: "Corrected local biography.",
       contact: { email: "corrected@example.edu" },
       publicationsOverview: { yaleCoAuthors: 12 },
-      interestsLabel: "Professional Interests"
+      interestsLabel: "Professional Interests",
+      professionalOrganizations: ["Example organization"]
     }
   });
 
@@ -65,7 +66,8 @@ test("applies durable profile overrides after synchronization", () => {
     bio: "Corrected local biography.",
     contact: { email: "corrected@example.edu", location: "Library" },
     publicationsOverview: { publications: 39, citations: 715, yaleCoAuthors: 12 },
-    interestsLabel: "Professional Interests"
+    interestsLabel: "Professional Interests",
+    professionalOrganizations: ["Example organization"]
   });
 });
 
@@ -131,4 +133,16 @@ test("renders a profile-specific interests label", () => {
     interestsLabel: "Professional Interests"
   });
   assert.match(card, /<h2>Professional Interests<\/h2>/);
+});
+
+test("renders professional organizations in the supporting section", () => {
+  const card = createProfileCard({
+    name: "Melissa Example",
+    title: "Medical Historian",
+    bio: "A profile biography.",
+    professionalOrganizations: ["Medical Heritage Library — Treasurer"]
+  });
+  assert.match(card, /profile-body--wide-biography/);
+  assert.match(card, /<h2>Professional Organizations<\/h2>/);
+  assert.match(card, /Medical Heritage Library — Treasurer/);
 });

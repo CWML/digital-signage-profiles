@@ -15,7 +15,7 @@
     "bio": "As Head of Academic Research and Education at the Cushing/Whitney Medical Library, I provide expert research assistance and collaborate with faculty and learners on a broad range of topics. I am particularly interested in health professions education scholarship and the role of librarians in teaching and assessing the evidence-based information-seeking skills of trainees. I collaborate on evidence and knowledge syntheses projects by providing expert searching and methodological expertise. The Academic Research and Education team supports the Yale School of Medicine, the Physician Associate program, the Yale School of Public Health, and the Yale School of Nursing and provides exceptional research and education services to the health sciences community at Yale. When not at work, I enjoy playing with my Pembroke Welsh Corgi, watching hockey, and knitting.",
     "publicationsOverview": {
       "publications": 10,
-      "citations": 574
+      "citations": 576
     },
     "medicalResearchInterests": [
       "Competency-Based Education",
@@ -41,7 +41,7 @@
     "bio": "Alyssa Grimshaw is a Biomedical Research and Methodology Librarian. She earned a post-master's certificate as an interprofessional informationist at Simmons University School of Library and Information Sciences. As an information expert, she collaborates on evidence synthesis and meta-research projects. Her research interests include reproducibility, reporting, and housing impacts on public health. Alyssa provides in-­depth reference, information, research and consultation services for clinical professionals and users in the health sciences community, including literature searches in support of systematic reviews, research, grants, clinical practice, animal use, teaching, and publishing.",
     "publicationsOverview": {
       "publications": 106,
-      "citations": 3882,
+      "citations": 3887,
       "yaleCoAuthors": 140
     },
     "medicalResearchInterests": [
@@ -89,7 +89,7 @@
     "bio": "Kate Nyhan is a research and education librarian for public health at Cushing/Whitney Medical Library and a lecturer in environmental health sciences at Yale School of Public Health. She earned a post-master's certificate as an interprofessional informationist at Simmons University School of Library and Information Sciences. As an information expert, she contributes to evidence synthesis and metaresearch projects. Her research interests include research waste, reproducibility, reporting, and the information behavior of the public health workforce.",
     "publicationsOverview": {
       "publications": 39,
-      "citations": 791
+      "citations": 793
     },
     "sourceUpdatedDate": "2026-10-20T00:00:00.0000000Z"
   },
@@ -121,7 +121,7 @@
     "bio": "Alexandria provides in-­depth reference, education, and research consultation services for Yale School of Nursing and clinical nurses at Yale New Haven Hospital.",
     "publicationsOverview": {
       "publications": 63,
-      "citations": 1305
+      "citations": 1311
     },
     "sourceUpdatedDate": "2026-09-27T00:00:00.0000000Z"
   },
@@ -159,7 +159,7 @@
     "bio": "I am a Clinical Librarian at the Cushing/Whitney Medical Library dedicated to serving the research needs of the Medical Campus. I am a point of contact for all things library, including support for literature searching and citation management software programs such as EndNote. Please contact me with your questions.",
     "publicationsOverview": {
       "publications": 105,
-      "citations": 2418
+      "citations": 2419
     },
     "sourceUpdatedDate": "2026-09-28T00:00:00.0000000Z"
   },
@@ -253,7 +253,7 @@
     ],
     "publicationsOverview": {
       "publications": 11,
-      "citations": 3693,
+      "citations": 3697,
       "yaleCoAuthors": 30
     },
     "sourceUpdatedDate": "2026-10-15T00:00:00.0000000Z"
@@ -273,7 +273,7 @@
     "bio": "Rolando Garcia-Milian is a bioinformatics professional who serves as a member of the Bioinformatics Support Hub, Cushing/Whitney Medical Library, and the Yale/NIDA Neuroproteomics Center at Yale School of Medicine. He also lectures in Epidemiology for the Environmental Health Sciences Department at Yale School of Public Health. Rolando began his academic journey at the University of Havana, where he earned a degree in biology and worked on the molecular basis of Human Papillomavirus-associated diseases, such as cervical cancer, regarding their response to cytokines. At Yale School of Medicine, he offers comprehensive bioinformatics support on omics data analysis, including training, consultation, and collaboration on various research projects. With authorship or co-authorship of over 70 research papers and book chapters, Rolando is extensively published in his field. Outside of his professional life, he enjoys gardening, fine arts, reading, running, and hiking.",
     "publicationsOverview": {
       "publications": 71,
-      "citations": 1466,
+      "citations": 1467,
       "yaleCoAuthors": 97
     },
     "medicalResearchInterests": [
@@ -413,5 +413,61 @@
       "location": "Cushing/Whitney Medical Library"
     },
     "sourceUpdatedDate": "2023-07-28T00:00:00.0000000Z"
+  },
+  {
+    "id": "melissa-grafe",
+    "name": "Melissa Grafe, PhD",
+    "title": "John R. Bumstead Librarian for Medical History & Head of the Medical Historical Library",
+    "team": "Medical Historical Library",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/7a7fbd83-6941-4a71-81bd-2da954ad1235",
+    "profileUrl": "https://medicine.yale.edu/profile/melissa-grafe/",
+    "contact": {
+      "email": "melissa.grafe@yale.edu",
+      "phone": "+12037854354",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "bio": "Melissa Grafe is the Head of the Medical Historical Library at Yale School of Medicine and joined Yale University in 2011 as the John R. Bumstead Librarian for Medical History at the Harvey Cushing/John Hay Whitney Medical Library. She leads the Medical Historical Library team and manages the library's collections, including over 100,000 medical and scientific volumes from the 12th-21st centuries, as well as a growing digital collection. She also works with students and faculty on research and classes; develops grants and publications; oversees major digitization projects; curates and stages exhibitions; and manages gifts and donations, among other duties.Grafe received her Ph.D. in the History of Medicine from Johns Hopkins University and was a Council of Library and Information Resources (CLIR) postdoctoral fellow at Lehigh University Library followed by an appointment as the Humanities Librarian at Lehigh before coming to Yale. She is past president for the Medical Heritage Library (2018-2020) and Archivists and Librarians in the History of the Health Sciences (renamed Librarians, Archivists, and Museum Professionals in the History of the Health Sciences).",
+    "sourceUpdatedDate": "2023-07-20T00:00:00.0000000Z",
+    "professionalOrganizations": [
+      "Medical Heritage Library — Treasurer (2021–Present)",
+      "Medical Heritage Library — President (2018–2020)",
+      "Archivists and Librarians in the History of the Health Sciences — President (2018–2020)"
+    ]
+  },
+  {
+    "id": "katherine-isham",
+    "name": "Katherine Isham",
+    "title": "Librarian 4",
+    "team": "Medical Historical Library",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/bc91b912-45c6-461f-8b55-7f1fe6c1011e",
+    "profileUrl": "https://medicine.yale.edu/profile/katherine-isham/",
+    "contact": {
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "sourceUpdatedDate": "2025-07-11T00:00:00.0000000Z"
+  },
+  {
+    "id": "christopher-zollo",
+    "name": "Christopher Zollo",
+    "title": "Lead Library Services Assistant 5",
+    "team": "Medical Historical Library",
+    "photoUrl": "https://ysm-res.cloudinary.com/image/upload/c_limit,f_auto,h_630,q_auto,w_1200/v1/yms/prod/56ad2e7b-43ac-4d65-8e8a-fd041f2d1294",
+    "profileUrl": "https://medicine.yale.edu/profile/christopher-zollo/",
+    "contact": {
+      "email": "christopher.zollo@yale.edu",
+      "location": "Cushing/Whitney Medical Library"
+    },
+    "sourceUpdatedDate": "2026-11-12T00:00:00.0000000Z"
+  },
+  {
+    "id": "laura-miller",
+    "name": "Laura O'Brien-Miller",
+    "title": "Conservator for Lewis Walpole and Medical Historical Libraries",
+    "team": "Medical Historical Library",
+    "profileUrl": "https://medicine.yale.edu/profile/laura-miller/",
+    "contact": {
+      "email": "laura.miller@yale.edu"
+    },
+    "sourceUpdatedDate": "2026-10-02T00:00:00.0000000Z"
   }
 ]

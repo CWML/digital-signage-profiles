@@ -299,6 +299,10 @@ h1 {
   margin: 20px 0 0;
 }
 
+.profile-body--wide-biography {
+  grid-template-columns: minmax(0, 3fr) minmax(320px, 1fr);
+}
+
 .content-section {
   min-height: 0;
   padding: 0;

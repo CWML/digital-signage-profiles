@@ -8,12 +8,20 @@ export function createProfileCard(profile) {
     profile.medicalResearchInterests,
     profile.interestsLabel
   );
+  const professionalOrganizationsSection = createResearchSection(
+    profile.professionalOrganizations,
+    "Professional Organizations"
+  );
   const portrait = createPortrait(profile);
 
   const hasCardDetails = contactSection || publicationsSection;
   const nameLengthClass = profile.name.length > 30
     ? " profile-page--long-name"
     : "";
+  const bodyLayoutClass = professionalOrganizationsSection
+    ? " profile-body--wide-biography"
+    : "";
+  const supplementarySection = professionalOrganizationsSection || researchSection;
 
   return `
     <article class="profile-page${nameLengthClass}">
@@ -57,9 +65,9 @@ export function createProfileCard(profile) {
         ${portrait}
       </section>
 
-      <div class="profile-body">
+      <div class="profile-body${bodyLayoutClass}">
         ${biographySection}
-        ${researchSection}
+        ${supplementarySection}
       </div>
     </article>
   `;
